@@ -29,3 +29,28 @@ nav ul {
 nav ul li {
     margin-right: 30px;
 }
+#recherche {
+    display: flex;
+    align-items: center;
+}
+.icone1 {
+    color: #000;
+    background-color:#F2F2F2;
+    padding: 10px ;
+    height: 19.2px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#recherche form .recherche1 {
+    padding: 8.2px;
+    width: 200px;
+    height: 19.2px;
+    border-color: #F2F2F2;
+}
+#recherche .bouton {
+    background-color: #0065FC;
+    padding: 10px;
+    height: 19.2px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
