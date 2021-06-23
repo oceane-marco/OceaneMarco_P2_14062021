@@ -54,3 +54,28 @@ nav ul li {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
+.filtres {
+    display: flex;
+    align-items: center;
+}
+h3 {
+    color: black;
+}
+.filtres ul  {
+    display: flex;
+    flex-direction: row;
+}
+.filtres ul li {
+   margin: 5px ;
+   border:#F2F2F2 1.2px,1.2px;
+   padding: 5px;
+}
+.îcone {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 100%;
+    width: 20px;
+    height: 16px ;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
