@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 a:link { 
     text-decoration:none;
@@ -7,6 +8,12 @@ a:link {
 } 
 ul {
     list-style:none;
+}
+li{
+    margin: 0px;
+}
+article {
+
 }
 .nofooter {
     max-width: 90%;
@@ -30,9 +37,27 @@ nav ul {
 nav ul li {
     margin-right: 30px;
 }
+.title { 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h1 {
+    margin: 0px;
+    font-size: 1.5em;
+}
+.info2 {
+    border: solid #F2F2F2 1px;
+    border-radius: 20px;
+    color: #0065FC;
+    width: 8px;
+    height: 2px;
+}
 #recherche {
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 .icone1 {
     color: #000;
@@ -69,7 +94,7 @@ nav ul li {
 .filtres ul li {
    margin: 5px ;
    padding: 5px;
-   border:#F2F2F2 1.2px,1.2px;
+   border:#F2F2F2 1.2px;
 }
 .îcone {
     margin: 5px;
@@ -91,6 +116,7 @@ nav ul li {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .tmp {
     display: flex;
@@ -100,24 +126,24 @@ nav ul li {
     border-radius: 25px;
     max-width: 420px;
     max-height: 600px;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
     background-color: #F2F2F2;
 }
 .tmp .atmp {
     display: flex;
     border-radius: 25px;
-    width: 343px;
-    height: 144px;
+    width: 340px;
+    height: 140px;
     padding: 10px;
     margin: 15px;
     background-color: white;
 }
 .atmp img {
     border-radius: 15px 0px 0px 15px;
-    min-width: 127px;
-    min-height: 140px;
-    max-width: 127px;
-    max-height: 140px;
+    width: 130px;
+    height: 140px;
+   
 }
 .itmp {
     display: flex;
@@ -131,9 +157,8 @@ nav ul li {
     flex-direction: column;
     order: 1;
     width: 850px;
-    height: 600px;
     border-radius: 25px;
-    padding: 10px;
+    padding: 20px;
     background-color: #F2F2F2;
 }
 .conteneurAH {
@@ -154,7 +179,7 @@ nav ul li {
 }
 .ahebergement img {
     border-radius: 15px 15px 0px 0px;
-    max-width: 234px;
+    max-width: 240px;
     max-height: 120px;
     margin: 0px;
     align-content: center;
@@ -175,18 +200,14 @@ p {
 .note {
     margin-top: 5px;
 }    
-
 .conteneurA {
     display: flex;
-    justify-content: stretch;
+
     margin-bottom: 50px;
 }
 .conteneurA1, .conteneurA2 {
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 700px;
-    max-height: 420px;
 }
 .CA1, .CA2 {
     display: flex;
@@ -204,12 +225,10 @@ p {
 .img1, .img4{
     width: 300px;
     height: 400px;
-
 }
 .img2 {
     width: 300px;
     height: 190px;
-
 }
 .img3 {
     width: 300px;
@@ -218,7 +237,6 @@ p {
 .img5 {
     width: 300px;
     height: 120px;
-    
 }
 .img6 {
     width: 300px;
@@ -228,17 +246,15 @@ p {
 .activity h3 {
     margin: 10px;
 }
-
 footer {
     display: flex;
-    justify-content: space-around;
     background-color: #F2F2F2;
-    max-width: 100%;
-    margin: none;
-   
 }
 footer article {
     display: flex;
     flex-direction: column;
-
+    margin: 8%;
+}
+footer ul {
+   padding: 0px;
 }
