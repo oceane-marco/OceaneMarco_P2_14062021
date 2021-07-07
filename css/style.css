@@ -2,10 +2,6 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
 }
-a:link { 
-    text-decoration:none;
-    color: black; 
-} 
 ul {
     list-style:none;
 }
@@ -32,7 +28,6 @@ nav {
 }
 nav ul {   
     display: flex;
-    flex-direction: row;
 }
 nav ul li {
     margin-right: 30px;
@@ -107,10 +102,6 @@ h1 {
 }
 .info2 {
     margin: 5px;
-    padding: 5px;
-    border-radius: 100%;
-    border-color: #DEEBFF;
-    border-width: 1.2px;
 }
 .tmphebergements {
     display: flex;
@@ -148,7 +139,6 @@ h1 {
 .itmp {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
     margin-left: 20px;
 }
 
@@ -197,9 +187,6 @@ h3 {
 p {
     margin: 0px;
 }
-.note {
-    margin-top: 5px;
-}    
 .conteneurA {
     display: flex;
 
@@ -247,7 +234,6 @@ p {
     margin: 10px;
 }
 footer {
-    display: flex;
     background-color: #F2F2F2;
 }
 footer article {
