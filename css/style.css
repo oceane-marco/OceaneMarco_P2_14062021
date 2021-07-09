@@ -9,8 +9,12 @@ ul {
 li{
     margin: 0px;
 }
+h2 {
+    font-size: 1rem;
+}
 h3{
     margin: 0px;
+    font-size: 0.8rem;
 }
 h4 {
     margin: 0px;
@@ -18,9 +22,10 @@ h4 {
 }
 p{
     margin: 0px;
+   font-size: 0.8rem;
 }
 .conteneurb { 
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
     padding: 0px 20px;
 }
@@ -35,40 +40,37 @@ a:link {
 } 
 .filtres ul li:hover {
     background-color: #f3f8ff;
-    transform: scale(1.015);
 }
 
 /* section header */
 header {
    display: flex;
    justify-content: space-between;
-   
+   justify-items: center;
 } 
-.logo img {
-    width: 100px;
-    
-}
 
 
 /* menue de navigation */
-.conteneurnav {
-    display: flex;
-    flex-grow: 1;
-}
-nav {
+.nav {
     display: flex;
 }
 header a {
     cursor: pointer;
     transition-duration: 0.1s;
-    padding : 20px;
+    padding: 20px;
+    
 }
 .nav_link {
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
 }
-.nav_link[data-active=true], .nav_link:hover {
+.nav_link:hover {
     border-color: #0065FC;
+
+}
+.inscription {
+    padding-left: 20px;
+    padding-right: 0px;
 }
 
 /* titre de la page */
@@ -110,12 +112,17 @@ h1 {
     padding: 10px;
     height: 20px;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;Z
-    borde: none;
+    border-top-right-radius: 10px;
+    border: none;
     cursor: pointer;
 }
 #recherche .bouton i {
     display: none;
+    
+}
+#recherche .bouton .recherche {
+    font-size: 1rem;
+    
 }
 
 /* Filtres */
@@ -170,7 +177,6 @@ li h3 {
 /* conteneur hebergement + les plus polulaire */
 .tmphebergements {
     display: flex;
-    flex-wrap: wrap-reverse;
     margin-top: 20px;
 }
 .ahebergement, .atmp {
@@ -181,7 +187,7 @@ li h3 {
 .hebergements {
     display: flex;
     flex-direction: column;
-    max-width: 840px;
+    max-width: 700px;
     border-radius: 25px;
     padding: 20px 40px;
     margin-right: 40px;
@@ -205,7 +211,7 @@ li h3 {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    width: 250px;
+    width: 200px;
     padding: 5px;
     margin: 15px;
     background-color: white;  
@@ -213,7 +219,7 @@ li h3 {
 .ahebergement img {
     border-radius: 15px 15px 0px 0px;
     max-width: 100%;
-    max-height: 120px;
+    max-height: 100px;
     margin: 0px;
     align-content: center;
 }
@@ -235,7 +241,7 @@ li h3 {
     display: flex;
     display: inline-block;
     border-radius: 25px;
-    max-width: 540px;
+    max-width: 300px;
     padding: 20px 40px;
     background-color: #F2F2F2;
 }
@@ -259,8 +265,8 @@ li h3 {
 .atmp {
     display: flex;
     border-radius: 20px;
-    width: 340px;
-    height: 140px;
+    width: 240px;
+    height: 100px;
     padding: 5px;
     margin: 20px 0px;
     background-color: white;
@@ -278,7 +284,8 @@ li h3 {
     margin-left: 20px;
 }
 .itmp .note {
-    margin-top: 50px;
+    margin-top: 15px;
+    padding-bottom: 10px;
 }
 
 /* couleur étoile */
@@ -297,26 +304,22 @@ li h3 {
 .conteneurA1, .conteneurA2 {
     display: flex;
 }
-.conteneurA2 {
-    margin-right: -45px;
-}
 .CA1, .CA2 {
     display: flex;
     flex-direction: column;
 }
 .activity article {
-    max-width: 320px;
-    min-width: 240px;
+    max-width: 300px;
     box-shadow: 6px 6px 6px #F2F2F2 ;
     border-radius: 25px 25px 25px 25px;
-    margin:0px 40px 40px 0px;
+    margin:0px 20px 20px 0px;
 }
 .activity img {
     border-radius: 15px 15px 0px 0px;
     width: 100%;
 }
 .img1, .img4{
-    height: 400px;
+    height: 90%;
 }
 .img2, .img6 {
     height: 190px;
@@ -339,41 +342,45 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-footer article {
+footer .afooter {
     display: flex;
     flex-direction: column;
+    padding: 20px;
    
 }
 footer ul {
    padding: 0px;
 }
-@media screen and (max-width: 1450px)
-{
+@media screen and (max-width: 1030px) {    
+    .tmphebergements {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 20px;
+    }
     .tmp{
-        max-width: 1110px;
+        max-width: 100%;
         margin-bottom: 20px;
     }
     .conteneurTMP {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        flex-direction: row;
     }
     .atmp {
-        max-width: 340px;
+        width: 340px;
+        height: 170px;
         margin-right: 20px;
     }
 
     .hebergements {
-        max-width: 1110px;
+        max-width: 100%;
         margin: 0px;
+        
     }
 
-    
-}
-@media screen and (max-width: 1030px) {
     .conteneurA {
         display: flex;
-        flex-wrap:  wrap;
+        flex-direction: column;
     }
     .conteneurA1, .conteneurA2 {
         display: block;
@@ -384,37 +391,52 @@ footer ul {
     
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
     .conteneurb {
         max-width: 100%;
         margin: 0px;
         padding: 0px;
     }
-    header {
-        padding: 20px;
-    }
-    .title {
-        padding: 20px;
-    }
+
+    .logo {
     
+    } 
+    .inscription {
+        order: 1;
+    }  
     .nav_link {
+        margin-top: 50px;
+        padding: 20px 80px;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
     }
-    .headerNavLink[data-active=true] {
-        border-top: 3px solid #0065FC;
-    }
-    #recherche .bouton h4 {
+   
+    #recherche .bouton .recherche {
         display: none;
     }
     #recherche .bouton i {
         display: initial;
+    } 
+    .tmp {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    
     }
+    .conteneurTMP {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: auto;
+    } 
     .hebergements {
-        max-width: 100%;
+       max-width: 100%;
         border-radius: 0px;
         background-color: initial;
+    }
+    .conteneurAH {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .ahebergement {
         width: 340px;
@@ -424,11 +446,18 @@ footer ul {
         border-radius: 0px;
         margin: 0px;
     }
+
     .activity article {
         max-width: 340px;
     }
     .CA1, .CA2{
         display: block;
+    }
+    .conteneurF {
+        flex-direction: column;
+        max-width: none;
+        padding: 20px;
+        margin: 0px;
     }
     
 }
