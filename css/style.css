@@ -42,36 +42,46 @@ a:link {
     background-color: #f3f8ff;
 }
 
-/* section header */
+/* Section header */
 header {
-   display: flex;
-   justify-content: space-between;
-   justify-items: center;
-} 
-
-
-/* menue de navigation */
-.nav {
     display: flex;
-}
-header a {
-    cursor: pointer;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  .logo {
+    
+    object-fit: contain;
+    flex-grow: 2;
+  }
+  
+  /* menue de navigation */
+  .conteneurnav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  nav {
+    display: flex;
+  }
+  header a {
     transition-duration: 0.1s;
     padding: 20px;
-    
-}
-.nav_link {
+  }
+  .nav_link {
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
-}
-.nav_link:hover {
-    border-color: #0065FC;
-
-}
-.inscription {
+  }
+  .nav_link:hover {
+    border-color: #0065fc;
+  }
+  .inscription {
     padding-left: 20px;
     padding-right: 0px;
-}
+    font-weight: bold;
+  }
+  a.inscription {
+    color: #0065fc;
+  }
 
 /* titre de la page */
 .title { 
@@ -180,7 +190,9 @@ li h3 {
     margin-top: 20px;
 }
 .ahebergement, .atmp {
-    box-shadow: 6px 6px 6px #d4d4d4 ;
+    box-shadow: 6px 6px 6px #d9d9d9;
+    cursor: pointer;
+    transition-duration: 0.1s;
 }
 
 /* Section hebergement  */
@@ -275,7 +287,7 @@ li h3 {
     border-radius: 15px 0px 0px 15px;
     margin: 0px;
     height: 100%;
-    width: 35%;
+    width: 40%;
 }
 .itmp {
     display: flex;
@@ -310,9 +322,11 @@ li h3 {
 }
 .activity article {
     max-width: 300px;
-    box-shadow: 6px 6px 6px #F2F2F2 ;
     border-radius: 25px 25px 25px 25px;
     margin:0px 20px 20px 0px;
+    box-shadow: 6px 6px 6px #d9d9d9;
+    cursor: pointer;
+    transition-duration: 0.1s;
 }
 .activity img {
     border-radius: 15px 15px 0px 0px;
@@ -367,8 +381,10 @@ footer ul {
         flex-direction: row;
     }
     .atmp {
-        width: 340px;
-        height: 170px;
+        
+        max-width: 300px;
+        min-width: 200px;
+        height: 100px;
         margin-right: 20px;
     }
 
@@ -380,10 +396,14 @@ footer ul {
 
     .conteneurA {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .conteneurA1, .conteneurA2 {
         display: block;
+    }
+    .activity article {
+        max-width: 400px;
+        min-width: 340px;
     }
     .activity img {
         height: 190px;
@@ -392,24 +412,34 @@ footer ul {
 
 }
 @media screen and (max-width: 730px) {
-    .conteneurb {
-        max-width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
 
+
+    header {
+    flex-wrap: wrap;
+    }
+    .logo, .inscription {
+    width: 50%;
+    align-items: center;
+    }
     .logo {
-    
-    } 
+    order:1;
+    }
     .inscription {
-        order: 1;
-    }  
+    order:2;
+    padding:0;
+    text-align: right;
+    padding: 20px 0px;
+    }
+    header nav {
+    order:3;
+    width:100%;
+    justify-content: space-around;
+    }
     .nav_link {
-        margin-top: 50px;
-        padding: 20px 80px;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
+        text-align: center;
     }
    
     #recherche .bouton .recherche {
@@ -421,8 +451,8 @@ footer ul {
     .tmp {
         width: 100%;
         flex-direction: column;
-        padding: 20px;
-    
+        justify-content: center;
+        align-items: center;
     }
     .conteneurTMP {
         flex-direction: column;
@@ -438,17 +468,21 @@ footer ul {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .atmp {
+        min-height: 150px;
+    }
+    .ahebergement, .atmp{
+        min-width: 340px;
+    }
     .ahebergement {
-        width: 340px;
+        min-height: 250%px;
     }
-    .tmp {
-        max-width: 100%;
-        border-radius: 0px;
-        margin: 0px;
+    .activity {
+        padding: 0px 40px;
     }
-
     .activity article {
         max-width: 340px;
+        max-height: 250px;
     }
     .CA1, .CA2{
         display: block;
@@ -456,7 +490,7 @@ footer ul {
     .conteneurF {
         flex-direction: column;
         max-width: none;
-        padding: 20px;
+        padding: 0px 40px;
         margin: 0px;
     }
     
