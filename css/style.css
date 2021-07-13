@@ -146,7 +146,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.filtres ul li {
+.filtres ul li a {
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -204,6 +204,13 @@ li h3 {
     padding: 20px 40px;
     margin-right: 40px;
     background-color: #F2F2F2;
+}
+.hebergements h3 {
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 }
 .conteneurAH {
     display: flex;
