@@ -49,6 +49,9 @@ a:hover {
 /* Déclaration pour IE qui assimile l'état :focus à l'état :active */
 a:focus,
 a:active {
+  text-decoration: none;
+  color: #000000;
+}
 .filtres ul li:hover {
   background-color: #f3f8ff;
 }
