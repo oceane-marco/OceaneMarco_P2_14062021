@@ -216,12 +216,6 @@ li h3 {
   margin-right: 40px;
   background-color: #f2f2f2;
 }
-.hebergements h3 {
-  margin-block-start: 2em;
-  margin-block-end: 2em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
 .conteneurAH {
   display: flex;
   flex-direction: row;
