@@ -331,8 +331,23 @@ article .ahebergement {
   height: 100%;
 }
 .ActivityImg {
-  height: auto;
   width: 100%;
+}
+.Img1,
+.Img4 {
+  height: 30rem;
+}
+.Img2 {
+  height: 12rem;
+}
+.Img3 {
+  height: 12rem;
+}
+.Img5 {
+  height: 10rem;
+}
+.Img6 {
+  height: 14rem;
 }
 .activity h3 {
   margin: 1.2rem 1.5rem;
@@ -381,6 +396,7 @@ footer .afooter {
 footer ul {
   padding: 0px;
 }
+
 @media screen and (max-width: 1030px) {
   .tmphebergements {
     display: flex;
@@ -416,9 +432,23 @@ footer ul {
   .conteneurA {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
+  }
+  #Card1,
+  #Card2,
+  #Card3,
+  #Card4,
+  #Card5,
+  #Card6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .ActivityImg {
+    height: 7rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
   }
   .conteneurA1,
   .conteneurA2 {
@@ -465,7 +495,7 @@ footer ul {
   .nav_link {
     border-top: none;
     border-bottom: 3px solid #f2f2f2;
-    width: 30%;
+    width: 50%;
     text-align: center;
   }
 
@@ -508,8 +538,12 @@ footer ul {
   .activity {
     padding: 0px 40px;
   }
+  .conteneurA {
+    display: flex;
+    flex-direction: column;
+  }
   .activity article {
-    max-width: 340px;
+    width: 100%;
     padding-bottom: 10px;
     padding-bottom: 10px;
   }
