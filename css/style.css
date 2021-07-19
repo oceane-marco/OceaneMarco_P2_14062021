@@ -199,6 +199,12 @@ li h3 {
   display: flex;
   margin-top: 20px;
 }
+.tmp article {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
 .ahebergement,
 .atmp {
   box-shadow: 6px 6px 6px #d9d9d9;
@@ -263,8 +269,6 @@ li h3 {
 }
 .iconetmp {
   font-size: 1.5em;
-  margin-start: 0.83em;
-  margin-end: 0.83em;
 }
 .conteneurTMP {
   display: flex;
