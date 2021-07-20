@@ -9,6 +9,10 @@ ul {
 li {
   margin: 0px;
 }
+h1 {
+  margin: 0rem;
+  font-size: 1.5em;
+}
 h2 {
   font-size: 1rem;
 }
@@ -18,11 +22,15 @@ h3 {
   font-size: 0.8rem;
 }
 h4 {
+  font-size: 0.8rem;
   margin: 0px;
   color: #0065fc;
 }
 p {
   margin: 0px;
+  font-size: 0.8rem;
+}
+.fas {
   font-size: 0.8rem;
 }
 .conteneurb {
@@ -35,6 +43,8 @@ img {
 }
 
 /* changement d'état*/
+
+/* reset link*/
 a:link {
   text-decoration: none;
   color: black;
@@ -53,6 +63,7 @@ a:active {
   text-decoration: none;
   color: #000000;
 }
+/* reset link*/
 .filtres ul li:hover {
   background-color: #f3f8ff;
 }
@@ -89,8 +100,8 @@ header a {
   border-color: #0065fc;
 }
 .inscription {
-  padding-left: 20px;
-  padding-right: 0px;
+  padding-left: 1rem;
+  padding-right: 0rem;
   font-weight: bold;
 }
 a.inscription {
@@ -99,32 +110,29 @@ a.inscription {
 
 /* titre de la page */
 .title {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
-h1 {
-  margin: 0px;
-  font-size: 1.5em;
-}
+
 /* champs de recherche */
 #recherche {
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .icone1 {
   color: #000;
   background-color: #f2f2f2;
-  padding: 10px;
-  height: 20px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  padding: 1rem;
+  height: 1rem;
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
 }
 #recherche form .recherche1 {
-  padding: 8.2px;
-  width: 200px;
-  height: 20px;
+  padding: 1rem;
+  width: 10rem;
+  height: 1rem;
   border: solid #f2f2f2e3 1.2px;
 }
 #recherche .bouton {
@@ -132,10 +140,10 @@ h1 {
   color: white;
   display: flex;
   align-items: center;
-  padding: 10px;
-  height: 20px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  padding: 1rem;
+  height: 1rem;
+  border-bottom-right-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
   border: none;
   cursor: pointer;
 }
@@ -160,10 +168,10 @@ h1 {
 .filters ul li a {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 1rem;
   border: 2px solid #d9d9d9;
-  border-radius: 25px;
-  margin-bottom: 10px;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   transition-duration: 0.1s;
   font-weight: bold;
@@ -173,17 +181,17 @@ h1 {
   color: #0065fc;
   background-color: #deebff;
   border-radius: 100%;
-  height: 45px;
-  width: 45px;
-  min-height: 50px;
-  min-width: 50px;
+  height: 2.8rem;
+  width: 2.8rem;
+  min-height: 3rem;
+  min-width: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: -2px;
 }
 li h3 {
-  margin: 10px;
+  margin: 0.8rem;
 }
 
 /* info */
@@ -252,7 +260,7 @@ article .ahebergement {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5px 10px;
+  margin: 5px 0px;
 }
 .hebergement article h3 {
   margin: 10px;
@@ -283,7 +291,7 @@ article .ahebergement {
   display: flex;
   border-radius: 20px;
   width: 100%;
-  height: 120px;
+  height: 7.5rem;
   padding: 5px;
   margin: 20px 0px;
   background-color: white;
@@ -298,7 +306,7 @@ article .ahebergement {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /* couleur étoile */
@@ -397,7 +405,7 @@ footer ul {
   padding: 0px;
 }
 
-@media (max-width: 1030px) {
+@media screen and (max-width: 1030px) {
   .tmphebergements {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -417,9 +425,6 @@ footer ul {
     width: 90%;
     height: 80%;
     margin-right: 20px;
-  }
-  .atmp h3 {
-    font-size: 0.8em;
   }
   .hebergements {
     max-width: 100%;
@@ -468,8 +473,15 @@ footer ul {
   .activity img {
     height: 190px;
   }
+  .itmp,
+  .ihebergement {
+    margin-left: 5px;
+  }
+  .fas {
+    font-size: 0.7rem;
+  }
 }
-@media (max-width: 700px) {
+@media all and (max-width: 700px) {
   header {
     flex-wrap: wrap;
   }
@@ -526,15 +538,10 @@ footer ul {
     display: flex;
     flex-direction: column;
   }
-  .atmp {
-    min-height: 150px;
-  }
   .ahebergement,
   .atmp {
-    min-width: 340px;
-    height: 100px;
+    height: 6rem;
   }
-
   .activity {
     padding: 0px 40px;
   }
@@ -544,9 +551,15 @@ footer ul {
   }
   .activity article {
     width: 100%;
-    padding-bottom: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
+  .atmp,
+  .ahebergement,
+  .activity article {
+    min-width: 10rem;
+    margin-bottom: 10px;
+  }
+
   .CA1,
   .CA2 {
     display: block;
@@ -556,5 +569,61 @@ footer ul {
     max-width: none;
     padding: 0px 40px;
     margin: 0px;
+  }
+}
+@media all and (max-width: 500px) {
+  #recherche {
+    display: flex;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .icone1 {
+    color: #000;
+    background-color: #f2f2f2;
+    padding: 0.8rem;
+    height: 0.8rem;
+    border-bottom-left-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+  }
+  #recherche form .recherche1 {
+    padding: 0.8rem;
+    width: 8rem;
+    height: 0.8rem;
+    border: solid #f2f2f2e3 1.2px;
+  }
+  #recherche .bouton {
+    background-color: #0065fc;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    height: 0.8rem;
+    border-bottom-right-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  #recherche .bouton .recherche {
+    font-size: 0.8rem;
+  }
+  /* taille de texte  */
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.6rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+  .fas {
+    font-size: 0.7rem;
   }
 }
