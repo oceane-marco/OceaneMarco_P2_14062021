@@ -254,13 +254,6 @@ li h3 {
   margin-top: 20px;
 }
 
-.tmp article {
-  display: flex;
-  width: auto;
-  height: auto;
-  justify-content: center;
-}
-
 .ahebergement,
 .atmp {
   box-shadow: 6px 6px 6px #d9d9d9;
@@ -504,14 +497,13 @@ footer ul {
 
   .containerTMP {
     display: flex;
-
+    justify-content: space-between;
     flex-direction: row;
   }
 
   .atmp {
     width: 90%;
-    height: 80%;
-    margin-right: 20px;
+    margin: 0px;
   }
 
   /* Section Hebergement  */
@@ -588,10 +580,15 @@ footer ul {
 }
 
 @media all and (max-width: 700px) {
+  .containerb {
+    padding: 0px;
+  }
+
   /* header */
 
   header {
     flex-wrap: wrap;
+    padding: 0px 20px;
   }
 
   .logo,
@@ -626,6 +623,12 @@ footer ul {
     text-align: center;
   }
 
+  /* Container title search filtres info */
+
+  .containeri {
+    padding: 0px 20px;
+  }
+
   /* Class search */
 
   #search .bouton .search {
@@ -645,6 +648,8 @@ footer ul {
   /* Section the most poulard */
   .tmp {
     width: 100%;
+    padding: 20px;
+    border-radius: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -660,6 +665,7 @@ footer ul {
 
   .hebergements {
     width: 100%;
+    padding: 1rem;
     border-radius: 0px;
     justify-content: center;
     background-color: initial;
@@ -680,7 +686,7 @@ footer ul {
   /* Section Activity */
 
   .activity {
-    padding: 0px 40px;
+    padding: 0px 20px;
   }
 
   .containerA {
@@ -689,13 +695,13 @@ footer ul {
   }
 
   .activity article {
-    width: 100%;
     padding-bottom: 20px;
   }
 
   .atmp,
   .ahebergement,
   .activity article {
+    width: 100%;
     min-width: 10rem;
     margin-bottom: 10px;
   }
