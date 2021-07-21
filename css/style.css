@@ -82,8 +82,8 @@ a:active {
 
 /* reset link*/
 
-.filtres ul li:hover {
-  background-color: #f3f8ff;
+.filtres ul li a:hover {
+  background-color: #deebff;
 }
 
 /* Section header */
