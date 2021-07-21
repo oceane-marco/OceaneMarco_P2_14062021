@@ -662,6 +662,10 @@ footer ul {
     margin: auto;
   }
 
+  .atmp {
+    width: 95%;
+  }
+
   /* Section hebergement  */
 
   .hebergements {
@@ -702,9 +706,12 @@ footer ul {
   .atmp,
   .ahebergement,
   .activity article {
-    width: 100%;
     min-width: 10rem;
     margin-bottom: 10px;
+  }
+  .ahebergement,
+  .activity article {
+    width: 100%;
   }
 
   .CA1,
