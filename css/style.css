@@ -147,8 +147,8 @@ a.SignUp {
 #search {
   display: flex;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #icone1 {
