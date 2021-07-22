@@ -105,6 +105,7 @@ header a {
 }
 
 .SignUp {
+  border-top: 3px transparent solid;
   padding-left: 1rem;
   padding-right: 0rem;
   font-weight: bold;
