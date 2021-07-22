@@ -99,30 +99,9 @@ header {
   flex-grow: 2;
 }
 
-/* menue de navigation */
-
-.containernav {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-nav {
-  display: flex;
-}
-
 header a {
   transition-duration: 0.1s;
   padding: 20px;
-}
-
-.nav_link {
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-}
-
-.nav_link:hover {
-  border-color: #0065fc;
 }
 
 .SignUp {
@@ -133,6 +112,20 @@ header a {
 
 a.SignUp {
   color: #0065fc;
+}
+/* menue de navigation */
+
+nav {
+  display: flex;
+}
+
+.nav_link {
+  transition-duration: 0.1s;
+  border-top: 3px transparent solid;
+}
+
+.nav_link:hover {
+  border-color: #0065fc;
 }
 
 /* titre de la page */
